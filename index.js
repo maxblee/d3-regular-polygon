@@ -1,1 +1,1 @@
-export {default as polygon} from "./src/polgon";
+export {default as polygon} from "./src/polygon";

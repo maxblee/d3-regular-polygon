@@ -17,12 +17,12 @@
   "scripts": {
     "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-polygon.js -- index.js",
     "test": "tape 'test/**/*-test.js'",
-    "prepublish": "npm run test && uglifyjs build/d3-polygon.js -c -m -o build/d3-polygon.min.js",
+    "prepublish": "npm run test && terser build/d3-polygon.js --compress --mangle -o build/d3-polygon.min.js",
     "postpublish": "zip -j build/d3-polygon.zip -- LICENSE README.md build/d3-polygon.js build/d3-polygon.min.js"
   },
   "devDependencies": {
     "rollup": "0.27",
     "tape": "4",
-    "uglify-js": "2"
+    "terser": "^5.2.1"
   }
 }

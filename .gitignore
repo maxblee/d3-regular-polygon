@@ -1,4 +1,5 @@
 .DS_Store
 build/
+test-run/
 node_modules
 npm-debug.log
