@@ -83,7 +83,7 @@ class RegularPolygon {
   path() {
     const coords = this.coords();
     const coordPath = coords.map(d => d.join(" ")).join(" L ");
-    return `M ${coordPath}`;
+    return `M ${coordPath} L ${coors[0][0]} ${coords[0][1]}`;
   }
 
   /**
