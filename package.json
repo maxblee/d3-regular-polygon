@@ -1,6 +1,6 @@
 {
   "name": "d3-regular-polygon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A d3 plugin for building regular polygons (equal angles and equal sides)",
   "keywords": [
     "d3",
